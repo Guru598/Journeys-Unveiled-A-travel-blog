@@ -1,0 +1,209 @@
+*:hover{
+    color:#e77728;}
+/* General Styles */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(pictempler1.png);
+    background-repeat:repeat;
+  background-size:cover;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation: fade 2s ease-in-out infinite;
+}
+
+
+/* Navigation Styles */
+.rad {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#ffdda1;
+    align-items: center;
+}
+.rad:hover{
+color: #ffdda1;
+}
+ul{
+    list-style:none;
+    background:#ffd151;
+   
+}
+ul li{
+    display:inline-block;
+    position: relative;
+    
+}
+
+ul li a {
+display: block;
+padding: 20px 25px;
+text-decoration: none;
+text-align: center;
+font-size: 20 px;
+}
+ul li ul.dropdown li{
+display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background:#ffd151;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+/* Heading Styles */
+.title,
+.subheading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    color: #edb230;
+}
+
+.subheading {
+    color: #edb230;
+}
+
+/* Region-specific Styles */
+.North {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffd151;
+}
+
+/* Text and Heading Colors */
+.intro,
+.intro2,
+.main-content p {
+    color: #f8c537;
+}
+
+p {
+    color: #ffdda1;
+}
+
+h1,
+h2 {
+    color: #e77728;
+}
+
+/* Smooth Scrolling */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Image Gallery Styles */
+.img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.img-gallery img:hover {
+    transform: scale(.8);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+/* Full Image Overlay Styles */
+.imgfull {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.imgfull img {
+    width: 90%;
+    height: 90%;
+}
+
+.imgfull span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color:red;
+    cursor: pointer;
+}
+
+/* Individual Letter Highlighting */
+.intro h3,
+.intro2 h3,
+.main-content p {
+    position: relative;
+}
+
+.intro h3::before,
+.intro2 h3::before,
+.main-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    pointer-events: none;
+    transition: background-color 0.3s ease;
+}
+
+.intro h3:hover::before,
+.intro2 h3:hover::before,
+.main-content p:hover::before {
+    background-color: yellow;
+}
+.all {
+    float:right;
+    position: relative;
+  
+}
+img 
+{
+    width:300px;
+    height: 200px;
+    float: right;
+padding-right: 20px;
+}
+.Big img{
+    padding-right: 700px;
+    width: 600px;
+    height: 700px;
+    align-items: center;
+    
+}
